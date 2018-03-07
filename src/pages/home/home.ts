@@ -33,15 +33,19 @@ export class HomePage {
       error => {});  
   }
   
-    login() {
+  login() {
     this.auth.authenticate(this.creds)
-        .subscribe(response => {
-          this.auth.successfulLogin(response.headers.get('Authorization'));
-          this.navCtrl.setRoot('CategoriasPage');
-        },
-        error => {});   
+      .subscribe(response => {
+        this.auth.successfulLogin(response.headers.get('Authorization'));
+        this.navCtrl.setRoot('CategoriasPage');
+      },
+      error => {});   
   }
-
+  
+  signup() {
+    this.navCtrl.push('SignupPage');
+  }
+  
   ionViewWillEnter() {
     this.menu.swipeEnable(false);
   }

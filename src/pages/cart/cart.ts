@@ -57,5 +57,9 @@ export class CartPage {
   
     goOn() {
       this.navCtrl.setRoot('CategoriasPage');
-    }  
+    }
+    ionic
+    checkout() {
+          this.navCtrl.push('PickAddressPage');
+        }  
 }

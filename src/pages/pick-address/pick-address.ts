@@ -4,6 +4,7 @@ import { EnderecoDTO } from '../../models/endereco.dto';
 import { StorageService } from '../../services/storage.service';
 import { ClienteService } from '../../services/domain/cliente.service';
 
+
 @IonicPage()
 @Component({
   selector: 'page-pick-address',

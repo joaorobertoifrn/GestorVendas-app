@@ -58,15 +58,8 @@ export class CartPage {
     goOn() {
       this.navCtrl.setRoot('CategoriasPage');
     }
-<<<<<<< HEAD
     ionic
     checkout() {
           this.navCtrl.push('PickAddressPage');
         }  
-=======
-    
-    checkout() {
-      this.navCtrl.push('PickAddressPage');
-    }  
->>>>>>> refs/remotes/origin/master
 }

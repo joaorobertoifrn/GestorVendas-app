@@ -44,7 +44,9 @@ import { PedidoService } from '../services/domain/pedido.service';
     ClienteService,
     ProdutoService,
     CartService,
-    PedidoService
+    PedidoService,
+    CartService,
+    ImageUtilService
   ]
 })
 export class AppModule {}

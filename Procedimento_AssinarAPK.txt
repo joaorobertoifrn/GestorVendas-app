@@ -1,0 +1,8 @@
+Gerar Chave para assinatura 
+keytool -genkey -v -keystore gestorvendas-key.jks -keyalg RSA -keysize 2048 -validity 100000 -alias gestorvendas
+
+Assinar APK
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore gestorvendas-key.jks app-release-unsigned.apk gestorvendas
+
+Executar
+zipalign -v 4 app-release-unsigned.apk GestorVendas.apk
